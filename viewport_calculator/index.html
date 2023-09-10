@@ -1,0 +1,105 @@
+<html lang="en" id="bg">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Viewport Units Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100&family=IBM+Plex+Sans:wght@300&family=Poppins:wght@300;400&family=Questrial&family=Roboto+Flex:opsz,wght@8..144,300&family=Roboto:ital@1&family=Titillium+Web:wght@300&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <div class = "line"></div>
+    <div class="box">
+        <div class="left">
+            <h1><u>Viewport Units Calculator <br>Tool to calculate responsive font-size attribute values in CSS viewport
+                    units </u></h1>
+            <p>Try the unit calculator below and get started with responsive typography, based on viewport width units
+                to
+                avoid
+                line length inconsistency. </p>
+            <div class="inputs">
+                <div class="leftInput">
+                    <div class="descriptionLeft">
+                        <p><b>Viewport width base</b><br> ... in px/pixels</p>
+                    </div>
+                    <div class="inputForms">
+                        <form>
+                            <textarea id="viewportInput" placeholder=""></textarea>
+                        </form>
+                    </div>
+                </div>
+                <div class="rightInput">
+                    <div class="descriptionRight">
+                        <p><b>Font-size</b><br> ... in px/pixels</p>
+                    </div>
+                    <div class="fontForm">
+                        <form>
+                            <textarea id="fontInput" placeholder=""></textarea>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="outputText">
+                <form>
+                    <textarea id="output"></textarea>
+                </form>
+            </div>
+            <div class="copyButton">
+                <button id="copy" onClick="copyValue()"><b>Copy to Clipboard</b></button>
+            </div>
+            <br>
+            <div id="result">
+                <p><b>Input</b><br> Based on a <span id="input1Value"></span>px wide viewport base AND <span
+                        id="input2Value"></span>px static font-size
+                    <base href="" class="">
+                </p>
+                <p><b>Output</b><br>Results in a responsive font-size value of: <span id="outputValue"></span>vw.</p>
+            </div>
+
+            <p><u>Resize your browser with the calculated font-size to see how it adjusts to the viewport width and the
+                    consistent
+                    line lengths across.</u></p>
+        </div>
+        <div class="right">
+            <p>Over the course of my rather short but on-going web development journey, there have been numerous
+                times
+                where
+                the use of static font unit in responsive web have created both aesthetic and legibility problems
+                (Probably
+                from my lack of web development skills too). </p>
+            <p>With fluid typography, it opens up for a more complete responsive approach when it comes to defining font
+                sizes (without using javaScript). This also means it also serves as a good alternative to 'expanding
+                columns' or at the very least simplifies the process when using these two methods in conjunction.</p>
+            <p>To help you (mostly me) get started with font-size viewport units, I developed a measurement
+                calculator
+                that
+                allows us to convert static font-size measurements to a fluid one. In the mere chance that the
+                calculator
+                isn't so simple, all you have to do is insert your 'viewport width base' and 'font-size base' to
+                calculate
+                your new 'vw' values. You can also copy the value to clipboard.+_!=+!</p>
+    
+            <p><u>Viewport width unit</u><br> 'vw' aka 'viewport width' signifies a percent value of the width
+                of the viewport.</p>
+            <p>1vw = 1% of the viewport width</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</html>

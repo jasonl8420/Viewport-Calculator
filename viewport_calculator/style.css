@@ -1,0 +1,142 @@
+body {
+    font-family: 'IBM Plex Sans', sans-serif;
+    background-color: rgb(179, 179, 179);
+    font-size: 19px;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-top:0;
+}
+
+h1{
+    font-size:calc(25px + 1vw);
+}
+
+h2{
+    font-size:calc(20px + 1vw);
+}
+
+.box {
+    display: flex;
+    flex: 1;
+}
+
+
+.left {
+    display: flex;
+    flex-direction: column;
+    width: calc(100%/2);
+    padding-right:5%;
+    border-left: 2px solid;
+    padding-left:5vw;
+}
+
+
+.right {
+    display: flex;
+    flex-direction: column;
+    width: calc(100%/2);
+    padding-left:5%;
+    border-left: 2px solid;
+}
+
+textarea {
+    resize: none;
+    width: 20vw;
+    background-color: rgb(179, 179, 179);
+}
+
+.outputText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#result {
+    border: 2px solid;
+    width: 37.4vw;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+#output {
+    font-size: 3.5vw;
+    resize: none;
+    width: 15w;
+}
+
+.forms {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}
+
+.description {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+
+}
+
+.inputs {
+    display:flex;
+    
+    flex-direction: row;
+}
+
+.descriptionLeft {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    font-size: 1.24vw;
+
+}
+
+.descriptionRight {
+    display:flex;
+    flex-direction: row;
+    flex: 1;
+    font-size: 1.24vw;
+}
+#viewportInput {
+    font-family: 'IBM Plex Sans', sans-serif;
+    border: 2px solid;
+    border-right: 1.5px solid;
+    height: 5vw;
+    font-size:2vw;
+    padding-top: 1vw;
+    padding-left: 1vw;
+
+}
+
+#fontInput {
+    font-family:'IBM Plex Sans', sans-serif;
+    border: 2px solid;
+    border-left: 1px solid;
+    height: 5vw;
+    font-size:2vw;
+    padding-top: 1vw;
+    padding-left: 1vw;
+
+}
+
+#output {
+    border: none;
+    font-family: 'IBM Plex Sans', sans-serif;
+    background-color: rgb(179, 179, 179);
+    color: black;
+    height: 70px;
+}
+
+.copyButton {
+    display: flex;
+}
+
+#copy {
+    width: 40vw;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 2vw;
+    border: 2px solid;
+    height: 5vw;
+    background-color: rgb(179, 179, 179);
+
+}
